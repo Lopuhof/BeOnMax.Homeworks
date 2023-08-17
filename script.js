@@ -12,6 +12,36 @@ let appData = {
 	savings: false
 };
 
+/* do {
+	let i = 0;
+	let a = prompt("Введите обязательную статью расходов в этом месяце", ''),
+		b = prompt("Во сколько обойдется?", '');
+		i++;
+
+	if ((typeof(a)) === 'string' && (typeof(a)) != null && (typeof(b)) != null && a != '' && b != '' && a.length < 50) {
+		console.log('done');
+		appData.expenses[a] = b;
+	} else {
+
+	};
+}
+	while (i == 2);	 */
+
+/* let i = 0;
+
+while (i < 2) {
+	let a = prompt("Введите обязательную статью расходов в этом месяце", ''),
+		b = prompt("Во сколько обойдется?", '');
+		i++;
+
+	if ((typeof(a)) === 'string' && (typeof(a)) != null && (typeof(b)) != null && a != '' && b != '' && a.length < 50) {
+		console.log('done');
+		appData.expenses[a] = b;
+	} else {
+
+	};
+}; */
+
 for (let i = 0; i < 2; i++) {
 	let a = prompt("Введите обязательную статью расходов в этом месяце", ''),
 		b = prompt("Во сколько обойдется?", '');
@@ -21,7 +51,7 @@ for (let i = 0; i < 2; i++) {
 		appData.expenses[a] = b;
 	} else {
 
-	}
+	};
 };
 
 appData.moneyPerDay = appData.budget / 30;
